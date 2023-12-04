@@ -49,12 +49,6 @@ div.cx {
     transition: transform 0.3s ease-in-out;
 }
 
-div.cx:hover {
-    height:71vh;
-    width: 25.5vw;
-    transition: 0.3s;
-}
-
 div.cx img {
     padding-top: 5vh;
     height: 19vh;
