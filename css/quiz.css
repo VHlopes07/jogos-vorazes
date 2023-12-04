@@ -1,0 +1,100 @@
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(146, 17, 17);
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+::selection {
+    background: rgba(0, 0, 0, 0);
+    color: rgb(102, 102, 102);
+}
+
+div#titulo {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div#titulo h1 {
+    color: white;
+    padding-top: 18vh;
+    padding-bottom: 20vh;
+}
+
+div#caixa {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+div.cx {
+    width: 25vw;
+    height: 70vh;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 20px;
+    margin-bottom: 20vh;
+    border: solid 1.5px black;
+    transition: transform 0.3s ease-in-out;
+}
+
+div.cx:hover {
+    height:71vh;
+    width: 25.5vw;
+    transition: 0.3s;
+}
+
+div.cx img {
+    padding-top: 5vh;
+    height: 19vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+div.cx h1 {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+div.cx button {
+    margin-top: 8vh;
+    padding: 30px;
+    font-size: 1.1em;
+    color: white;
+    background-color: black;
+    width: 17vw;
+    border-radius: 20px;
+}
+
+div.cx button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+
+    div#caixa {
+        flex-direction: column;
+    }
+
+    div.cx {
+        width: 40vh;
+    }
+
+    div.cx button {
+        width: 80%;
+    }
+
+}

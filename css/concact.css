@@ -1,0 +1,115 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+::selection {
+    background: rgba(0, 0, 0, 0);
+    color: rgb(102, 102, 102);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(146, 17, 17);
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 85vh;
+}
+
+div#titulo {
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 27vh;
+}
+
+div#titulo h1,
+div#titulo p {
+    color: white;
+}
+
+div#titulo h1 {
+    height: 1.2em;
+    font-weight: 100;
+}
+
+div#titulo p {
+    height: 1em;
+}
+
+div#linkeados {
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+div#linkeados button {
+    padding: 18px;
+    font-size: 0.8em;
+    color: white;
+    background-color: black;
+    width: 28%;
+    border-radius: 30px;
+    margin: 0 auto;
+    border: none;
+}
+
+div#linkeados button:hover,
+div#linkeados button#B:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+div#linkeados button#B {
+    background-color: transparent;
+    color: white;
+    border: 2px solid black;
+}
+
+div#imagens img {
+    height: 380px;
+    align-items: center;
+    margin-right: 10vh;
+}
+
+@media (max-width: 1000px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    div#titulo {
+        width: 100%;
+        text-align: center;
+    }
+
+    div#linkeados {
+        flex-direction: column;
+        display: flex;
+        padding: 10px;
+    }
+
+    div#linkeados button {
+        width: 80%;
+    }
+
+    div#linkeados button#A {
+        margin-bottom: 10px;
+    }
+
+    div#imagens {
+        display: none;
+    }
+}

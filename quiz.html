@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGOS VORAZES | QUIZ </title>
+    <link rel="shortcut icon" href="img/TordoB.webp">
+    <script src="js/button.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/nivel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">JOGOS VORAZES</a>
+        <nav class="nav">
+            <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="menu" id="menu" role="menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a class="J" href="index.html">JOGOS VORAZES</a></li>
+                <li><a href="index.html">EM CHAMAS</a></li>
+                <li><a href="index.html">A ESPERANÇA</a></li>
+                <li><a class="br" href="quiz.html"><img src="img/brasil.webp" alt="portugues"></a></li>
+                <li><a class="uk" href="quiz.en.html"><img src="img/uk.png" alt="ingles"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="cx1">
+            <h1 data-aos="zoom-in">QUIZ</h1>
+            <div id="caixa">
+                <div class="cx" data-aos="zoom-in">
+                    <img src="img/escada.png" alt="">
+                    <p> QUIZ <br> NÍVEL FÁCIL</p>
+                    <br>
+                    <button onclick="window.location.href = 'facil.html'">
+                        COMEÇAR
+                    </button>
+                </div>
+                <div class="cx" data-aos="zoom-in">
+                    <img src="img/escadaA.png" alt="">
+                    <p> QUIZ <br> NÍVEL DÍFICIL</p>
+                    <br>
+                    <button onclick="window.location.href = 'dificil.html'">
+                        COMEÇAR
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contato">
+            <h1>Sobre Nós</h1>
+            <p>No momento, sou estudante do ensino médio, sempre em busca de melhorias, seja através do desenvolvimento
+                de
+                projetos ou e studando para o meu futuro. Sempre busco o melhor, e se você contar comigo, tenho certeza
+                de que
+                não irá se arrepender. <a id="concact" href="concact.html">CLIQUE AQUI</a></p>
+            <div id="midia">
+                <a href="https://www.facebook.com/profile.php?id=100088016475354" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/VictorH52257575" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/victor-hugo-lopes-pessoa-287aa1243/" class="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/channel/UCM5CPlZBFXGVmGh9d5ubXLg" class="fa fa-youtube"></a>
+                <a href="https://br.pinterest.com/Victorh_z/" class="fa fa-pinterest"></a>
+            </div>
+        </div>
+
+        <div class="tema">
+            <h1>Jogos Vorazes</h1>
+            <a href="jogos.html">
+                <p>JOGOS VORAZES</p>
+            </a>
+            <a href="personagensA.html">
+                <p>Personagem</p>
+            </a>
+            <a href="historiaA.html">
+                <p>História</p>
+            </a>
+            <a href="opiniaoA.html">
+                <p>Opinião</p>
+            </a>
+        </div>
+
+        <div class="tema">
+            <h1>Em Chamas</h1>
+            <a href="emchamas.html">
+                <p>EM CHAMAS</p>
+            </a>
+            <a href="personagensB.html">
+                <p>Personagem</p>
+            </a>
+            <a href="historiaB.html">
+                <p>História</p>
+            </a>
+            <a href="opiniaoB.html">
+                <p>Opinião</p>
+            </a>
+        </div>
+
+        <div class="tema">
+            <h1>A Esperança</h1>
+            <a href="aesperança.html">
+                <p>A ESPERANÇA</p>
+            </a>
+            <a href="personagensC.html">
+                <p>Personagem</p>
+            </a>
+            <a href="historiaC.html">
+                <p>História</p>
+            </a>
+            <a href="opiniaoC.html">
+                <p>Opinião</p>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/header.js">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Jacques+Francois&family=Karla:wght@300&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;1,6..12,300;1,6..12,400&family=Nunito:wght@300&family=Onest:wght@900&family=Prompt&display=swap');
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGOS VORAZES | QUIZ</title>
+    <link rel="shortcut icon" href="img/TordoB.webp">
+    <script src="js/button.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/nivel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">JOGOS VORAZES</a>
+        <nav class="nav">
+            <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="menu" id="menu" role="menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html">JOGOS VORAZES</a></li>
+                <li><a href="index.html">EM CHAMAS</a></li>
+                <li><a href="index.html">A ESPERANÇA</a></li>
+                <li><a class="br" href="facil.html"><img src="img/brasil.webp" alt="portugues"></a></li>
+                <li><a class="uk" href="facil.en.html"><img src="img/uk.png" alt="ingles"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="cx1">
+            <h1 data-aos="zoom-in">Quiz Jogos Vorazes <br> nível fácil</h1>
+            <div id="caixa">
+                <div class="cx" data-aos="zoom-in">
+                    <img src="img/escada.png" alt="escada">
+                    <p> QUIZ <br> NÍVEL FÁCIL</p>
+                    <br>
+                    <button onclick="window.location.href = 'facil.html'">
+                        COMEÇAR
+                    </button>
+                </div>
+                <div class="cx" data-aos="zoom-in">
+                    <img src="img/escadaA.png" alt="escada">
+                    <p> QUIZ <br> NÍVEL DÍFICIL</p>
+                    <br>
+                    <button onclick="window.location.href = 'dificil.html'">
+                        COMEÇAR
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <form name="quiz">
+            <div id="quadrado">
+                <p data-aos="zoom-in">1. Quem é o mentor de Katniss Everdeen nos Jogos Vorazes?</p>
+                <br>
+                <div data-aos="zoom-in">
+                    <label>
+                        <input type="radio" name="questão1" value="10">
+                        <span class="custom-radio"></span> Haymitch Abernathy
+                    </label>
+                    <label>
+                        <input type="radio" name="questão1" value="0">
+                        <span class="custom-radio"></span> Cinna
+                    </label>
+                    <label>
+                        <input type="radio" name="questão1" value="0">
+                        <span class="custom-radio"></span> Plutarch Heavensbee
+                    </label>
+                    <label>
+                        <input type="radio" name="questão1" value="0">
+                        <span class="custom-radio"></span> Seneca Crane
+                    </label>
+                </div>
+            </div>
+            <div id="quadradoA">
+                <p v>2. Qual é o nome da última arena nos Jogos Vorazes?</p>
+                <br>
+                <div data-aos="zoom-in">
+                    <label>
+                        <input type="radio" name="questão2" value="0">
+                        <span class="custom-radio"></span> Arena de Fogo
+                    </label>
+                    <label>
+                        <input type="radio" name="questão2" value="10">
+                        <span class="custom-radio"></span> Arena Relógio
+                    </label>
+                    <label>
+                        <input type="radio" name="questão2" value="0">
+                        <span class="custom-radio"></span> Arena do Oceano
+                    </label>
+                    <label>
+                        <input type="radio" name="questão2" value="0">
+                        <span class="custom-radio"></span> Arena de Gelo
+                    </label>
+                </div>
+            </div>
+            <div id="quadradoB">
+                <p data-aos="zoom-in">3. Quem é o presidente de Panem nos Jogos Vorazes?</p>
+                <br>
+                <div data-aos="zoom-in">
+                    <label>
+                        <input type="radio" name="questão3" value="0">
+                        <span class="custom-radio"></span> Presidente Coin
+                    </label>
+                    <label>
+                        <input type="radio" name="questão3" value="10">
+                        <span class="custom-radio"></span> Presidente Snow
+                    </label>
+                    <label>
+                        <input type="radio" name="questão3" value="0">
+                        <span class="custom-radio"></span> Presidente Alma Coin
+                    </label>
+                    <label>
+                        <input type="radio" name="questão3" value="0">
+                        <span class="custom-radio"></span> Presidente Paylor
+                    </label>
+                </div>
+            </div>
+            <div id="quadradoC">
+                <p data-aos="zoom-in">4. O que significa o gesto de três dedos em Jogos Vorazes?</p>
+                <br>
+                <div data-aos="zoom-in">
+                    <label>
+                        <input type="radio" name="questão4" value="10">
+                        <span class="custom-radio"></span> Sinal de Esperança
+                    </label>
+                    <label>
+                        <input type="radio" name="questão4" value="0">
+                        <span class="custom-radio"></span> Sinal de Paz
+                    </label>
+                    <label>
+                        <input type="radio" name="questão4" value="0">
+                        <span class="custom-radio"></span> Sinal de Amizade
+                    </label>
+                    <label>
+                        <input type="radio" name="questão4" value="0">
+                        <span class="custom-radio"></span> Sinal de União
+                    </label>
+                </div>
+            </div>
+            <div id="quadradoD">
+                <p data-aos="zoom-in">5. Qual é a profissão de Gale Hawthorne em Jogos Vorazes?</p>
+                <br>
+                <div data-aos="zoom-in">
+                    <label>
+                        <input type="radio" name="questão5" value="0">
+                        <span class="custom-radio"></span> Padeiro
+                    </label>
+                    <label>
+                        <input type="radio" name="questão5" value="0">
+                        <span class="custom-radio"></span> Minerador
+                    </label>
+                    <label>
+                        <input type="radio" name="questão5" value="10">
+                        <span class="custom-radio"></span> Caçador
+                    </label>
+                    <label>
+                        <input type="radio" name="questão5" value="0">
+                        <span class="custom-radio"></span> Médico
+                    </label>
+                </div>
+            </div>
+            <div id="quadradoE">
+                <p data-aos="zoom-in">6. Qual é o Distrito de Katniss Everdeen em Jogos Vorazes?</p>
+                <br>
+                <div data-aos="zoom-in">
+                    <label>
+                        <input type="radio" name="questão6" value="0">
+                        <span class="custom-radio"></span> Distrito 1
+                    </label>
+                    <label>
+                        <input type="radio" name="questão6" value="0">
+                        <span class="custom-radio"></span> Distrito 2
+                    </label>
+                    <label>
+                        <input type="radio" name="questão6" value="10">
+                        <span class="custom-radio"></span> Distrito 12
+                    </label>
+                    <label>
+                        <input type="radio" name="questão6" value="0">
+                        <span class="custom-radio"></span> Distrito 13
+                    </label>
+                </div>
+            </div>
+            <div id="quadradoF">
+                <p data-aos="zoom-in">7. O que acontece quando um tributo pega a cornucópia nos Jogos Vorazes?</p>
+                <br>
+                <div data-aos="zoom-in">
+                    <label>
+                        <input type="radio" name="questão7" value="0">
+                        <span class="custom-radio"></span> Ganha automaticamente
+                    </label>
+                    <label>
+                        <input type="radio" name="questão7" value="10">
+                        <span class="custom-radio"></span> Inicia a batalha
+                    </label>
+                    <label>
+                        <input type="radio" name="questão7" value="0">
+                        <span class="custom-radio"></span> Fica imune
+                    </label>
+                    <label>
+                        <input type="radio" name="questão7" value="0">
+                        <span class="custom-radio"></span> É desclassificado
+                    </label>
+                </div>
+            </div>
+            <div id="quadradoG">
+                <p data-aos="zoom-in">8. Qual é o símbolo da resistência em Jogos Vorazes?</p>
+                <br>
+                <div data-aos="zoom-in">
+                    <label>
+                        <input type="radio" name="questão8" value="0">
+                        <span class="custom-radio"></span> Chama
+                    </label>
+                    <label>
+                        <input type="radio" name="questão8" value="0">
+                        <span class="custom-radio"></span> Tordo
+                    </label>
+                    <label>
+                        <input type="radio" name="questão8" value="0">
+                        <span class="custom-radio"></span> Arco e flecha
+                    </label>
+                    <label>
+                        <input type="radio" name="questão8" value="10">
+                        <span class="custom-radio"></span> Mockingjay
+                    </label>
+                </div>
+            </div>
+            <div id="quadradoH">
+                <p data-aos="zoom-in">9. O que representa o gesto de levantar três dedos em Jogos Vorazes?</p>
+                <br>
+                <div data-aos="zoom-in">
+                    <label>
+                        <input type="radio" name="questão9" value="0">
+                        <span class="custom-radio"></span> Submissão
+                    </label>
+                    <label>
+                        <input type="radio" name="questão9" value="10">
+                        <span class="custom-radio"></span> Protesto
+                    </label>
+                    <label>
+                        <input type="radio" name="questão9" value="0">
+                        <span class="custom-radio"></span> Respeito
+                    </label>
+                    <label>
+                        <input type="radio" name="questão9" value="0">
+                        <span class="custom-radio"></span> Comemoração
+                    </label>
+                </div>
+            </div>
+            <div id="quadradoI">
+                <p data-aos="zoom-in">10. Quem é o melhor amigo de Katniss em Jogos Vorazes?</p>
+                <br>
+                <div data-aos="zoom-in">
+                    <label>
+                        <input type="radio" name="questão10" value="10">
+                        <span class="custom-radio"></span> Gale Hawthorne
+                    </label>
+                    <label>
+                        <input type="radio" name="questão10" value="0">
+                        <span class="custom-radio"></span> Peeta Mellark
+                    </label>
+                    <label>
+                        <input type="radio" name="questão10" value="0">
+                        <span class="custom-radio"></span> Finnick Odair
+                    </label>
+                    <label>
+                        <input type="radio" name="questão10" value="0">
+                        <span class="custom-radio"></span> Haymitch Abernathy
+                    </label>
+                </div>
+            </div>
+            <button type="button" data-aos="zoom-in" onclick="calculateScore()" id="submit-button">Enviar Respostas</button>
+        </form>
+
+        <div id="resultado">
+            <div id="ponto" data-aos="zoom-in"></div>
+            <div id="mensagem" data-aos="zoom-in"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contato">
+            <h1>Sobre Nós</h1>
+            <p>No momento, sou estudante do ensino médio, sempre em busca de melhorias, seja através do desenvolvimento
+                de
+                projetos ou e studando para o meu futuro. Sempre busco o melhor, e se você contar comigo, tenho certeza
+                de que
+                não irá se arrepender. <a id="concact" href="concact.html">CLIQUE AQUI</a></p>
+            <div id="midia">
+                <a href="https://www.facebook.com/profile.php?id=100088016475354" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/VictorH52257575" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/victor-hugo-lopes-pessoa-287aa1243/" class="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/channel/UCM5CPlZBFXGVmGh9d5ubXLg" class="fa fa-youtube"></a>
+                <a href="https://br.pinterest.com/Victorh_z/" class="fa fa-pinterest"></a>
+            </div>
+        </div>
+
+        <div class="tema">
+            <h1>Jogos Vorazes</h1>
+            <a href="jogos.html">
+                <p>JOGOS VORAZES</p>
+            </a>
+            <a href="personagensA.html">
+                <p>Personagem</p>
+            </a>
+            <a href="historiaA.html">
+                <p>História</p>
+            </a>
+            <a href="opiniaoA.html">
+                <p>Opinião</p>
+            </a>
+        </div>
+
+        <div class="tema">
+            <h1>Em Chamas</h1>
+            <a href="emchamas.html">
+                <p>EM CHAMAS</p>
+            </a>
+            <a href="personagensB.html">
+                <p>Personagem</p>
+            </a>
+            <a href="historiaB.html">
+                <p>História</p>
+            </a>
+            <a href="opiniaoB.html">
+                <p>Opinião</p>
+            </a>
+        </div>
+
+        <div class="tema">
+            <h1>A Esperança</h1>
+            <a href="aesperança.html">
+                <p>A ESPERANÇA</p>
+            </a>
+            <a href="personagensC.html">
+                <p>Personagem</p>
+            </a>
+            <a href="historiaC.html">
+                <p>História</p>
+            </a>
+            <a href="opiniaoC.html">
+                <p>Opinião</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/header.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,972 @@
+:root {
+  font-size: 16px;
+  --red-black: #2b0c0c;
+  --royal-blue-dark: #3946d4;
+  --white: #fff;
+  --backgroud: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body::-webkit-scrollbar {
+  width: 8px;             
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);    
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(146, 17, 17);    
+  border-radius: 20px;      
+  border: 2px solid rgb(0, 0, 0); 
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0);  
+  color: rgb(102, 102, 102); 
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav {
+  flex-direction: row;
+}
+
+li img {
+  height: 15px;
+  width: 20px;
+  border-radius: 2px;
+}
+
+.br {
+  background: #292929;
+  padding: 3px 3px 0px;
+}
+
+body {
+  font-family: 'Cinzel';
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(-45deg, red, #2b0c0c, #770303, #2b0c0c);
+  background-size: 400% 400%;
+  animation: animate 15s ease infinite;
+  height: 5.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  padding-left: 3%;
+  font-weight: 100;
+}
+
+.nav {
+  padding-right: 5%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+}
+
+.menu li {
+  padding: 20px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.btn-menu {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  background: linear-gradient(-45deg, red, #2b0c0c, #770303, #2b0c0c);
+  background-size: 400% 400%;
+  animation: animate 15s ease infinite;
+  height: fit-content;
+}
+
+div.page {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  height: 85.18518518518519vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  background-size: 400% 400%;
+  overflow-x: hidden;
+}
+
+.img img {
+  position: absolute;
+  height: 50vh;
+  width: 50vh;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  animation: startbutton 1.4s;
+}
+
+.img {
+  align-items: center;
+  display: none;
+}
+
+div.page h1 {
+  font-weight: 100;
+  font-size: 5.3vh;
+  font-family: 'cinzel';
+  font-weight: 500;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 32%;
+  color: #fff;
+  text-align: center;
+  animation: opacitytight 1.4s;
+}
+
+div.page p {
+  font-size: 3.3vh;
+  font-weight: 100;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 43%;
+  color: #fff;
+  text-align: center;
+  animation: opacityleft 1.4s;
+}
+
+div.page button {
+  position: absolute;
+  width: 400px;
+  height: 120px;
+  left: 5%;
+  right: 5%;
+  top: 55%;
+  background: linear-gradient(rgb(137, 20, 20), rgb(213, 7, 7));
+  font-weight: 200;
+  font-family: 'cinzel';
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 50px;
+  font-size: 1.45em;
+  box-shadow: 0px 2px 3px #7c0505;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  animation: startbutton 1.4s;
+  border: none;
+  box-shadow: 2px 2px 2px #000000;
+}
+
+.con {
+  display: flex;
+  transition: 1s ease-in-out;
+  transform: translateX(0);
+  opacity: 0.2;
+  top: 88px;
+}
+
+.con img {
+  position: relative;
+  margin-top: -100px;
+  width: 209vh;
+  height: 85.18518518518519vh;
+  top: 88px;
+}
+
+div.page button:hover {
+  opacity: 0.7;
+}
+
+.text,
+.img {
+  width: 933.5px;
+}
+
+div.games {
+  display: flex;
+  flex-direction: row;
+}
+
+div.fire,
+div.mockingjay {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+}
+
+div.games h1,
+div.fire h1 {
+  font-weight: 100;
+  font-size: 38px;
+  font-family: 'cinzel';
+  color: #fff;
+}
+
+div.mockingjay h1 {
+  font-weight: 100;
+  font-size: 38px;
+  font-family: 'cinzel';
+  color: #fff;
+}
+
+div.games p,
+div.fire p {
+  position: relative;
+  top: 1vh;
+  text-align: justify;
+  font-weight: 500;
+  font-size: 2.5vh;
+  color: #ccccca;
+}
+
+div.mockingjay p {
+  position: relative;
+  top: 1vh;
+  text-align: justify;
+  font-weight: 500;
+  font-size: 2.5vh;
+  color: #ccccca;
+}
+
+div.games button.B {
+  position: relative;
+  top: 5vh;
+  background: linear-gradient(-45deg, #076d24, rgb(13, 212, 53), rgb(28, 150, 9));
+  font-weight: 200;
+  font-family: 'cinzel';
+  letter-spacing: 0.3px;
+  font-weight: 100;
+  padding: 25px;
+  border-radius: 50px;
+  font-size: 1.3em;
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 2px #270000;
+}
+
+div.fire button.B {
+  position: relative;
+  top: 5vh;
+  background: linear-gradient(-45deg, #9c1515, rgb(255, 0, 0), rgb(161, 12, 12));
+  font-weight: 200;
+  font-family: 'cinzel';
+  letter-spacing: 0.3px;
+  font-weight: 100;
+  padding: 25px;
+  border-radius: 50px;
+  font-size: 1.3em;
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 2px #270000;
+}
+
+div.mockingjay button.B {
+  position: relative;
+  top: 5vh;
+  background: linear-gradient(-45deg, #0a228b, rgb(0, 119, 255), rgb(15, 69, 218));
+  font-weight: 200;
+  font-family: 'cinzel';
+  letter-spacing: 0.3px;
+  font-weight: 100;
+  padding: 25px;
+  border-radius: 50px;
+  font-size: 1.3em;
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 2px #270000;
+}
+
+div.games button.B:hover,
+div.fire button.B:hover {
+  opacity: 0.7;
+}
+
+div.mockingjay button.B:hover {
+  opacity: 0.7;
+}
+
+.container {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+}
+
+div#geral {
+  margin-top: 20vh;
+  width: 72%;
+  background-color: #770303;
+  height: fit-content;
+  padding: 3vw;
+  margin-bottom: 20vh;
+  border-radius: 30px;
+  box-shadow: 4px 4px 4px rgb(41, 0, 0);
+  border: none;
+}
+
+div#texto {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+div#texto h1 {
+  color: var(--white);
+  font-weight: 100;
+  margin-top: 10vh;
+  border-radius: 5vh;
+}
+
+div#imagem img {
+  margin: 0 auto;
+  display: flex;
+  height: 20vh;
+  margin-bottom: 4vh;
+}
+
+div#botões {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+div#botões button.B {
+  margin-bottom: 20px;
+  align-items: center;
+  background-color: #ab0101;
+  font-weight: 200;
+  font-family: 'cinzel';
+  letter-spacing: 0.3px;
+  font-weight: 100;
+  padding: 25px;
+  width: 60%;
+  border-radius: 50px;
+  font-size: 1.3em;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #3b0606;
+  border: none;
+}
+
+div#botões button.B:hover {
+  transition: 0.2s ease;
+  background-color: #490000;
+}
+
+div#icone {
+  margin-bottom: 20vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  top: 3px;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  animation: icon 2s ease infinite;
+}
+
+.iconA {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: -20px;
+  animation: icon 2s ease infinite 0.5s;
+}
+
+.iconB {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  top: -35px;
+  animation: icon 2s ease infinite 0.9s;
+}
+
+@keyframes icon {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.card {
+  flex-direction: column;
+  display: flex;
+  flex: 50%;
+  padding: 75px;
+  padding-top: 200px;
+}
+
+.content h1::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 10vh;
+}
+
+div.games .content h1::before {
+  background: rgb(7, 217, 7);
+}
+
+div.fire .content h1::before {
+  background: red;
+}
+
+div.mockingjay .content h1::before {
+  background: rgb(11, 40, 255);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes font {
+  0% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes startbutton {
+  0% {
+    opacity: 0%;
+    top: 70vh;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes opacityright {
+  0% {
+    opacity: 0%;
+    right: 20%;
+  }
+
+  100% {
+    opacity: 100%;
+
+  }
+}
+
+@keyframes opacityleft {
+  0% {
+    opacity: 0%;
+    left: 20%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.container-slider {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 180px;
+}
+
+.container-slider img {
+  height: 480px;
+  width: 450px;
+  border-radius: 30px;
+}
+
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 480px;
+}
+
+.slider {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.on {
+  opacity: 1;
+}
+
+.elementor-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+}
+
+.elementor-shape .elementor-shape-bottom .elementor-shape .elementor-shape-top {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+footer {
+  height: fit-content;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+}
+
+footer h1,
+footer p {
+  color: white;
+}
+
+footer a#concact {
+  color: rgb(255, 16, 16);
+  font-size: bold;
+}
+
+footer a#concact:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+
+footer h1 {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: #ff0000;
+}
+
+footer p {
+  font-weight: 100;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+footer a p:hover {
+  text-decoration: underline;
+}
+
+div#contato {
+  margin-top: 20px;
+  flex: 40%;
+  margin: 40px;
+  text-align: justify;
+}
+
+div.tema {
+  margin-top: 20px;
+  padding: 40px;
+  flex: 20%;
+  text-align: center;
+}
+
+div#midia {
+  display: flex;
+  flex-direction: row;
+}
+
+div#midia img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+div#midia img:hover {
+  opacity: 0.7;
+}
+
+.fa {
+  padding: 18px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  color: #ffffff;
+  background: rgb(255, 0, 0);
+  transition: 0.3s;
+}
+
+.fa-facebook:hover {
+  color: #000000;
+  background: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.fa-facebook {
+  background: #ff0000;
+  color: white;
+}
+
+.fa-twitter {
+  background: #181818;
+  color: white;
+}
+
+.fa-google {
+  background: #181818;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #181818;
+  color: white;
+}
+
+.fa-youtube {
+  background: #181818;
+  color: white;
+}
+
+.fa-instagram {
+  background: #181818;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #181818;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    left: 0;
+    background: linear-gradient(-45deg, red, #2b0c0c, #770303, #2b0c0c);
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .menu a {
+    padding: 1.5rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(116, 113, 113, 0.16);
+    border-radius: 0;
+  }
+
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .nav.active .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .nav.active .hamburger {
+    border-top-color: transparent;
+  }
+
+  .nav.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+
+  div.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .text p {
+    left: 45%;
+    top: 50%;
+    margin-top: 30px;
+  }
+
+  .text h1 {
+    top: 42vh;
+    text-shadow: #000000 2px 4px 5px;
+    padding-left: 10px;
+  }
+
+  .text button {
+    top: 46vh;
+    box-shadow: #270505 2px 7px 7px;
+    padding: 3.5vh;
+    font-size: 3vh;
+  }
+
+  .text {
+    height: 70vh;
+    width: 100%;
+  }
+
+  .img {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    height: 30vh;
+    width: 100%;
+  }
+
+  .img a {
+    display: flex;
+    align-items: center;
+  }
+
+  .img img {
+    top: -10vh;
+    right: 0.7vh;
+    height: 35vh;
+    width: 35vh;
+  }
+
+  div.games {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+  }
+
+  div.games h1,
+  div.fire h1 {
+    font-size: 4vh;
+  }
+
+  div.mockingjay h1 {
+    font-size: 4vh;
+  }
+
+  .content h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    position: relative;
+  }
+
+  .content h1::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 8vh;
+    background: rgb(230, 177, 19);
+  }
+
+  .card.active .content {
+    height: auto;
+  }
+
+  .card {
+    flex-direction: column;
+    display: flex;
+    flex: 50%;
+    text-align: center;
+    padding: 5%;
+    align-items: center;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .text {
+    position: absolute;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .text p,
+  .text h1 {
+    position: relative;
+  }
+
+  .text button {
+    position: relative;
+  }
+
+  .elementor-shape {
+    top: 0px;
+  }
+
+  div.page button {
+    top: 70vh;
+    width: 90%;
+  }
+
+  div.page p {
+    font-size: 2.3vh;
+    top: 56vh;
+  }
+
+  div.page h1 {
+    top: 40vh;
+  }
+
+  div.page img {
+    top: 25vh;
+    left: 50%;
+    right: 50%;
+    margin: 0 auto;
+  }
+
+  div#geral {
+    width: 90%;
+  }
+
+  div#botões button.B {
+    width: 95%;
+    font-size: 0.9em;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+
+  .fire {
+    margin-top: 400px;
+  }
+
+  .fa {
+    padding: 2.6vw;
+  }
+
+  div.mockingjay {
+    margin-top: 55vh;
+  }
+  
+  div.games div.card {
+    margin-top: 10vh;
+  }
+
+  div.page h1 {
+    font-size: 4.6vh;
+  }
+
+  .logo {
+    font-size: 2.5vh;
+  }
+
+  div.page p {
+    font-size: 2vh;
+    top: 48vh;
+  }
+
+  div.page button {
+    top: 66vh;
+  }
+
+  div.page {
+    height: 90vh;
+  }
+
+}

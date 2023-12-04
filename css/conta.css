@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: rgba(0, 0, 0, 0);
+    color: rgb(102, 102, 102);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(146, 17, 17);
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+main {
+    height: fit-content;
+}
+
+div#titulo {
+    flex-direction: column;
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    margin-top: 17vh;
+    margin-bottom: 17vh;
+}
+
+div#titulo h1 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+div#formulario {
+    height: fit-content;
+}
+
+div#formulario p {
+    color: white;
+    font-size: 1em;
+}
+
+p.sublinhado {
+    position: relative;
+    top: -18px;
+}
+
+div#formulario form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15vh;
+    height: fit-content;
+    width: fit-content;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 50vw;
+    width: 18vw;
+    height: 5.5vh;
+    font-size: 1em;
+}
+
+form button {
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'cinzel';
+    letter-spacing: 0.3px;
+    font-weight: 100;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: black;
+    background-color: white;
+    transition: o.4s ease;
+}
+
+div#novo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15vh;
+    height: fit-content;
+    width: fit-content;
+}
+
+div#novo h1 {
+    color: white;
+    font-size: 1.1em;
+}
+
+div#novo button {
+    margin-top: 2vh;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    font-family: 'cinzel';
+    letter-spacing: 0.3px;
+    font-weight: 100;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1em;
+    border: solid 2px black;
+    cursor: pointer;
+}
+
+div#novo button:hover {
+    color: black;
+    background-color: white;
+    transition: o.4s ease;
+}
+
+div#novo a {
+    color: blue;
+    cursor: pointer;
+}
+
+div#novo a:hover {
+    color: white;
+}
+
+@media (max-width: 1000px) {
+
+    form input {
+        width: 65vw;
+    }
+}
